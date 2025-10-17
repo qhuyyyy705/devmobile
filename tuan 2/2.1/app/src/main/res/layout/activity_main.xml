@@ -28,6 +28,7 @@
             android:layout_height="wrap_content"
             android:hint="Nhập vào số lượng"
             android:inputType="text"
+            android:textColor="@android:color/black"
             android:padding="10dp"
             android:background="@android:drawable/edit_text" />
 
