@@ -12,6 +12,8 @@ import com.example.baitap.ui.theme.screens.RowLayoutScreen
 import com.example.baitap.ui.theme.screens.ColumnLayoutScreen
 import com.example.baitap.ui.theme.screens.TextFieldScreen
 import com.example.baitap.ui.theme.screens.TextDetailScreen
+import com.example.baitap.ui.theme.screens.CheckboxScreen
+import com.example.baitap.ui.theme.screens.LazyColumnScreen
 
 
 
@@ -28,6 +30,9 @@ fun NavigationGraph(navController: NavHostController) {
         composable("column") { ColumnLayoutScreen(navController) }
         composable("textfield") { TextFieldScreen() }
         composable("textdetail") { TextDetailScreen() }
+        composable("checkbox") { CheckboxScreen(navController) }
+        composable("lazycolumn") { LazyColumnScreen(navController) }
+
 
 
     }

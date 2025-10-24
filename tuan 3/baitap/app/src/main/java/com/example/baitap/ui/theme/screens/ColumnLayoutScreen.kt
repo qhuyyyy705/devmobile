@@ -19,6 +19,7 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 
 @OptIn(androidx.compose.material3.ExperimentalMaterial3Api::class)
+
 @Composable
 fun ColumnLayoutScreen(navController: NavController) {
     Scaffold(

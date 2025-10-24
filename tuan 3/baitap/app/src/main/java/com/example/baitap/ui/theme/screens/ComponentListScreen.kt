@@ -21,7 +21,7 @@ fun ComponentListScreen(navController: NavController) {
             .padding(16.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        // 🟦 Tiêu đề
+        //  Tiêu đề
         Text(
             text = "UI Components List",
             color = Color(0xFF2196F3),
@@ -31,24 +31,26 @@ fun ComponentListScreen(navController: NavController) {
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        // 🧩 Nhóm Display
+        //  Nhóm Display
         SectionTitle("Display")
         ButtonItem("Text", "Displays text") { navController.navigate("textdetail") }
         ButtonItem("Image", "Displays an image") { navController.navigate("image") }
+        ButtonItem("Checkbox", "Checkbox vuông & tròn") { navController.navigate("checkbox") }
 
-        // 🧠 Nhóm Input
+        //  Nhóm Input
         SectionTitle("Input")
         ButtonItem("TextField", "Input field for text") { navController.navigate("textfield") }
         ButtonItem("PasswordField", "Input field for passwords") { navController.navigate("password") }
 
-        // 📐 Nhóm Layout
+        //  Nhóm Layout
         SectionTitle("Layout")
         ButtonItem("Column", "Arranges elements vertically") { navController.navigate("column") }
         ButtonItem("Row", "Arranges elements horizontally") { navController.navigate("row") }
+        ButtonItem("LazyColumn", "Danh sách cuộn") { navController.navigate("lazycolumn") }
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        // 🔴 Nút tự tìm hiểu
+        //  Nút tự tìm hiểu
         Button(
             onClick = {},
             modifier = Modifier
