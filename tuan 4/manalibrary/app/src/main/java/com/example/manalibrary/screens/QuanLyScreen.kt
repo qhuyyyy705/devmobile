@@ -177,4 +177,9 @@ fun QuanLyScreen(
                         .fillMaxWidth(0.5f)
                         .height(48.dp)
                 ) {
-                    Text("Thêm", color = Color.Wh
+                    Text("Thêm", color = Color.White, fontSize = 16.sp)
+                }
+            }
+        }
+    }
+}

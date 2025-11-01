@@ -1,6 +1,5 @@
 package com.example.uthsmarttasks.navigation
 
-
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
@@ -11,13 +10,24 @@ import com.example.uthsmarttasks.screens.*
 fun SetupNavGraph(navController: NavHostController) {
     NavHost(
         navController = navController,
-        startDestination = "splash"
-    ) {
-        composable("splash") { SplashScreen(navController) }
-        composable("onboard1") { OnBoard1Screen(navController) }
-        composable("onboard2") { OnBoard2Screen(navController) }
-        composable("onboard3") { OnBoard3Screen(navController) }
+        startDestination = Screen.Splash.route
 
+    ) {
+        composable(Screen.Splash.route) {
+            SplashScreen(navController)
+        }
+        composable(Screen.OnBoard1.route) {
+            val screen = OnBoard1Screen(navController)
+            screen.Show()
+        }
+
+        composable(Screen.OnBoard2.route) {
+            val screen = OnBoard2Screen(navController)
+            screen.Show()
+        }
+        composable(Screen.OnBoard3.route) {
+            val screen = OnBoard3Screen(navController)
+            screen.Show()
+        }
     }
 }
-
